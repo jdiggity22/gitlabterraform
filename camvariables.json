@@ -1,0 +1,40 @@
+{
+  "input_datatypes": [
+  ],
+  "input_groups": [
+    {
+      "name": "Gitlab",
+      "label": "Gitlab"
+    }
+  ],
+  "output_groups": [ ],
+  "template_input_params": [
+    {
+      "name": "api_token",
+      "label": "User API token",
+      "description": "User access token to authenticate to the server",
+      "type": "string",
+      "default": "",
+      "required": true,
+      "hidden": false,
+      "immutable": true,
+      "secured": true,
+      "group_name": "Gitlab"
+    },
+    {
+      "name": "gitlab_url",
+      "label": "GitLab API URL",
+      "description": "URL to your Gitlab server API",
+      "type": "string",
+      "default": "true",
+      "required": true,
+      "hidden": false,
+      "immutable": true,
+      "secured": false,
+      "group_name": "Gitlab"
+    }
+  ],
+  "template_output_params": [
+  ]
+}
+

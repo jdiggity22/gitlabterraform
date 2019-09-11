@@ -4,7 +4,8 @@
 #
 # Configure the GitLab Provider
 provider "gitlab" {
-    #token = "${var.gitlab_token}"
+    token = "${var.gitlab_token}"
+    base_url = "${var.gitlab_url}"
     insecure = "true"
 }
 
@@ -15,6 +16,14 @@ resource "gitlab_project" "camexample" {
   visibility_level = "public"
 }
 
-#variable "gitlab_token" {
-#  description = "Gitlab API token."
-#}
+variable "gitlab_token" {
+  default = ""
+  description = "User API token used to authenticate to GitLabs."
+
+}
+
+variable "gitlab_url" {
+  default = ""
+  description = "URL of your Gitlabs API Server "
+}
+
