@@ -14,10 +14,10 @@
       "label": "User API token",
       "description": "User access token to authenticate to the server",
       "type": "string",
-      "default": "",
+      "default": "Your API Key Here",
       "required": true,
       "hidden": false,
-      "immutable": true,
+      "immutable": false,
       "secured": true,
       "group_name": "Gitlab"
     },
@@ -26,10 +26,10 @@
       "label": "GitLab API URL",
       "description": "URL to your Gitlab server API",
       "type": "string",
-      "default": "true",
+      "default": "https://gitlab.10.10.1.4.nip.io/api/v4/",
       "required": true,
       "hidden": false,
-      "immutable": true,
+      "immutable": false,
       "secured": false,
       "group_name": "Gitlab"
     }
