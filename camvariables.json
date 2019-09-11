@@ -10,7 +10,7 @@
   "output_groups": [ ],
   "template_input_params": [
     {
-      "name": "api_token",
+      "name": "gitlab_token",
       "label": "User API token",
       "description": "User access token to authenticate to the server",
       "type": "string",
